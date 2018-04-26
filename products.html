@@ -1,0 +1,36 @@
+<div class="jumbotron text-center">
+	<h1>Page of  product</h1>	
+	
+	<!--<p>{{ message }}</p>-->
+
+	<ul class="product-list small-block-grid-3">
+		<li ng-repeat="product in products">
+			<figure class="figure">
+				<img ng-src="{{product.image}}" class="image" alt="{{product.title}}">
+				<figcaption>
+					<h3>{{product.title}}, {{product.price}}$</h3>
+					<button ng-click="addToCart(product)">Add to cart</button>
+				</figcaption>
+			</figure>
+		</li>
+	</ul>
+				
+	
+	
+
+	<div ng-if="cart.length" class="shopping-cart">
+		<h2>{{cart.length}} types of items in cart, {{getCartPrice()}}$</h2>
+
+		<span class="cart-item th radius" ng-repeat="product in cart">
+			<img ng-src="{{product.image}}" title="{{product.title}}"/>
+			<span class="badge" ng-show="product.quantity > 1">
+				x{{product.quantity}}
+			</span>
+		</span>
+
+		<button ng-click="checkout();">Checkout</button>
+	</div>
+
+
+
+</div>

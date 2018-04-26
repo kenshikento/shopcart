@@ -1,0 +1,20 @@
+<form name="checkoutForm"  ng-submit="onSubmit()" data-abide>
+
+	<div ng-if="processing" us-spinner></div>
+
+	<fieldset >
+	
+		<legend  ng-repeat="c in prev track by $index">Purchase Confirmation  Transaction ID : {{c[index+0].transactionID}}  Date : {{c[index+0].date}} Total Price : £{{c[index+0].totalamount}}</legend>
+		
+		<div ng-repeat="i in prev track by $index">
+			<div ng-repeat="a in i">
+				<p><img class ="productimage"ng-src="{{a.image}}" alt="404" /> ProductID : {{a.productID}}	Title : {{a.title}}	Price : £{{a.price}}	Quantity : {{a.quantity}}</p>
+			</div>
+		</div>
+		
+		
+		
+
+	</fieldset>
+
+</form>

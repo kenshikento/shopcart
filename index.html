@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/css/normalize.css"/>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/css/foundation.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.7/angular-material.css"/>
+
+  <link rel="stylesheet" href="style.css"/>
+  <base href="http://localhost/shopcart/" />
+
+    <title>Shop Cart Tutorial</title>
+
+
+    </head>
+    <div  ng-cloak="" class="navBardemoBasicUsage" ng-app="MyApp">
+      <md-content class="md-padding">
+        <md-nav-bar md-no-ink-bar="disableInkBar" md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+          <md-nav-item md-nav-href="/shopcart/history" name="history">
+            History
+          </md-nav-item>
+            <md-nav-item md-nav-href="/shopcart/products" name="products">
+            Products
+          </md-nav-item> 
+      
+        </md-nav-bar>
+         <ui-view></ui-view>
+
+      </md-content>
+    </div> 
+</html>
+    
+    <!--Angular scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-aria.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-messages.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.7/angular-material.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-foundation/0.8.0/mm-foundation-tpls.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.js"></script>
+    <!-- main controller script -->
+    <script src="http://localhost/shopcart/app.js"></script>    

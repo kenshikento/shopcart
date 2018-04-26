@@ -1,0 +1,35 @@
+<div class="jumbotron text-center">
+	<h1>Transaction History</h1>
+	
+		<form name="historyform"  ng-submit="Submit()" data-abide>
+			<label class="large-12 columns">User			
+   				<select ng-model="userid" ng-change="changeid(userid)" 
+     					data-ng-options="blisterPackTemplate as blisterPackTemplate.name for blisterPackTemplate in list" required>
+    					<option disabled selected value>-- select an option --</option>
+				</select>
+			</label>
+
+		</form>
+		
+
+
+	<div class ="col-6 list products" id="productlist" ng-repeat="i in test  |orderBy:'-' track by $index" >
+			
+		<div class ="col-12" ng-init ="calulatesum(i)"  ng-repeat="(key,value) in i | groupBy :'i.transactionID'" > 
+			 	
+
+			<div class ="col-12"   ng-repeat="(key,value) in value" > 
+					 <p ng-click="showdetails = ! showdetails">TransactionID : {{value[index+0].transactionID}} Date : {{value[index+0].date}}  Total Price : £{{value[index+0].totalamount}}</p>
+			<div class ="col-12"   ng-repeat="a in value" ng-show ="showdetails"> 
+				<img class ="productimage"ng-src="{{a.image}}" alt="404" />
+			 	ProductID : {{a.productID}} Price : £{{a.price}}  Quantity : {{a.quantity}}  Description {{a.description}} 
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+	</div>
+	
+	
+
