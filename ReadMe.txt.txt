@@ -1,6 +1,9 @@
 Description:
 This exercise is too demonstrate a small application from design stage to finish product however it is far from complete.
 
+Design folder has images of how the program works
+
+
 // Improvements // 
 1:Delete function for the items
 2:Search query for the products
