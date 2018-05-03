@@ -16,3 +16,5 @@ Design folder has images of how the program works
 // Issues // 
 1:On Chrome if you remove the cache and reload the page again it will run the javascript application twice which does not happen on Firefox|Internet Explorer
 2:Back drop rejection may not be handled
+
+Demo : https://tien-nguyen.co.uk/shopcart/
